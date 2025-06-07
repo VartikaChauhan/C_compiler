@@ -20,16 +20,7 @@ This project is a mini C compiler built from scratch using Flex for lexical anal
 - Git (optional, for version control)
 
 
-## 📂 Project Structure
 
-c_compiler/
-├── lexer.l # Lexical analyzer (Flex)
-├── parser.y # Grammar and parser (Bison)
-├── main.c # Entry point of compiler
-├── ast.c / ast.h # Abstract Syntax Tree structure
-├── symbol_table.c/.h # Symbol table logic
-├── Makefile # Automate the build process
-└── README.md # Project documentation
 
 
 For Ubuntu:
