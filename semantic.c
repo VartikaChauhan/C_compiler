@@ -61,3 +61,6 @@ void semantic_check(ASTNode* node) {
     semantic_check(node->right);
 }
 
+
+
+
