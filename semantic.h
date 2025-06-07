@@ -4,6 +4,7 @@
 #include "ast.h"
 #include "symbol_table.h"
 
+<<<<<<< HEAD
 typedef enum {
     TYPE_INT,
     TYPE_VOID,
@@ -18,5 +19,13 @@ void check_semantics(ASTNode* root);
 
 // Validate all function declarations and calls
 void validate_functions(ASTNode* root);
+=======
+// Entry point to perform semantic checks on the AST
+void semantic_check(ASTNode* root);
+
+// Utility function to report semantic errors
+void semantic_error(const char* msg, ASTNode* node);
+>>>>>>> b948ab8 (Added semantic analysis and function declaration validation)
 
 #endif // SEMANTIC_H
+

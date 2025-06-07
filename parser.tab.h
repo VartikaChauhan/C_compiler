@@ -58,21 +58,26 @@ extern int yydebug;
     NUMBER = 259,                  /* NUMBER  */
     INT = 260,                     /* INT  */
     RETURN = 261,                  /* RETURN  */
-    EQ = 262,                      /* EQ  */
-    NE = 263,                      /* NE  */
-    LE = 264,                      /* LE  */
-    GE = 265,                      /* GE  */
-    LPAREN = 266,                  /* LPAREN  */
-    RPAREN = 267,                  /* RPAREN  */
-    LBRACE = 268,                  /* LBRACE  */
-    RBRACE = 269,                  /* RBRACE  */
-    COMMA = 270,                   /* COMMA  */
-    SEMICOLON = 271,               /* SEMICOLON  */
-    ASSIGN = 272,                  /* ASSIGN  */
-    PLUS = 273,                    /* PLUS  */
-    MINUS = 274,                   /* MINUS  */
-    MUL = 275,                     /* MUL  */
-    DIV = 276                      /* DIV  */
+    IF = 262,                      /* IF  */
+    ELSE = 263,                    /* ELSE  */
+    WHILE = 264,                   /* WHILE  */
+    ASSIGN = 265,                  /* ASSIGN  */
+    EQ = 266,                      /* EQ  */
+    NEQ = 267,                     /* NEQ  */
+    LT = 268,                      /* LT  */
+    GT = 269,                      /* GT  */
+    LE = 270,                      /* LE  */
+    GE = 271,                      /* GE  */
+    PLUS = 272,                    /* PLUS  */
+    MINUS = 273,                   /* MINUS  */
+    MUL = 274,                     /* MUL  */
+    DIV = 275,                     /* DIV  */
+    LPAREN = 276,                  /* LPAREN  */
+    RPAREN = 277,                  /* RPAREN  */
+    LBRACE = 278,                  /* LBRACE  */
+    RBRACE = 279,                  /* RBRACE  */
+    SEMICOLON = 280,               /* SEMICOLON  */
+    COMMA = 281                    /* COMMA  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -81,13 +86,13 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 13 "parser.y"
+#line 17 "parser.y"
 
-    int ival;
-    char *sval;
-    struct ASTNode *node;
+    int intval;
+    char* strval;
+    ASTNode* node;
 
-#line 91 "parser.tab.h"
+#line 96 "parser.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;

@@ -14,5 +14,7 @@ ASTNode* createLeaf(char *name);
 ASTNode* createLeafInt(int value);
 void evaluate(ASTNode* node);
 void printAST(ASTNode* node, int level);
+void freeAST(ASTNode* node);
+
 
 #endif

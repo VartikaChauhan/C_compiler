@@ -17,8 +17,8 @@ ASTNode* createLeaf(char *name) {
     ASTNode* node = (ASTNode*) malloc(sizeof(ASTNode));
     node->op = strdup("id");
     node->name = strdup(name);
-    node->left = node->right = NULL;
-    node->value = 0;
+    node->left = NULL;
+    node->right = NULL;
     return node;
 }
 
@@ -26,7 +26,8 @@ ASTNode* createLeafInt(int value) {
     ASTNode* node = (ASTNode*) malloc(sizeof(ASTNode));
     node->op = strdup("num");
     node->value = value;
-    node->left = node->right = NULL;
+    node->left = NULL;
+    node->right = NULL;
     node->name = NULL;
     return node;
 }
@@ -47,4 +48,13 @@ void printAST(ASTNode* node, int level) {
 void evaluate(ASTNode* node) {
     printf("AST Structure:\n");
     printAST(node, 0);
+}
+
+void freeAST(ASTNode* node) {
+    if (!node) return;
+    freeAST(node->left);
+    freeAST(node->right);
+    if (node->op) free(node->op);
+    if (node->name) free(node->name);
+    free(node);
 }
