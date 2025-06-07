@@ -53,18 +53,6 @@ make
 #This will parse test.c and perform lexical, syntax, and semantic analysis.
 
 
-#Example:
-int main() {
-    int x;
-    x = 5 + 3;
-    return x;
-}
-
-#Output:
-No semantic errors found.
-Program parsed and validated successfully.
-
-
 
 
 
