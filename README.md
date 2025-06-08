@@ -37,6 +37,13 @@ Install the following dependencies:
 - Make
 - Git (optional, for version control)
 
+
+## 📸 Sample Compilation Snapshot
+
+![Compilation Snapshot](C_compiler%20snap.jpeg)
+
+
+
 ### For Ubuntu/Debian-based systems:
 
 ```bash
