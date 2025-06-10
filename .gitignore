@@ -1,0 +1,12 @@
+# Object files
+*.o
+
+# Binary executable
+compiler
+
+# Flex & Bison generated files
+lex.yy.c
+parser.tab.c
+parser.tab.h
+
+
