@@ -51,18 +51,18 @@ sudo apt update
 sudo apt install flex bison gcc build-essential git -y
 ```
 
-# Build the Compiler
+## Build the Compiler
 ```bash
 make
 ``` 
 
-#Run the Compiler
+## Run the Compiler
 ```bash
 ./compiler test.c
 ```
 This will parse test.c and perform lexical, syntax, and semantic analysis.
 
-# 📁 .gitignore — Ignored Files
+## 📁 .gitignore — Ignored Files
 
 This project uses a .gitignore file to exclude automatically generated files from version control, ensuring a clean and portable codebase.
 Ignored Binary and Generated Files:
