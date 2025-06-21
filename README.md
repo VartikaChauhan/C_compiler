@@ -14,15 +14,15 @@ It is designed to parse a subset of the C language and includes a full pipeline 
 
 ## 🔧 Features
 
-- ✅ **Lexical Analysis** using Flex
-- ✅ **Syntax Parsing** with Bison (LALR parser)
-- ✅ **Abstract Syntax Tree (AST)** construction and traversal
-- ✅ **Symbol Table Management** for scoped variables and function identifiers
-- ✅ **Type Checking** for expressions, assignments, and operations
-- ✅ **Undeclared Variable Detection**
-- ✅ **Function Declaration & Call Validation**
-- ✅ **Error Handling** with informative messages
-- ✅ **AST Evaluation & Visualization Support**
+-  **Lexical Analysis** using Flex
+-  **Syntax Parsing** with Bison (LALR parser)
+-  **Abstract Syntax Tree (AST)** construction and traversal
+-  **Symbol Table Management** for scoped variables and function identifiers
+-  **Type Checking** for expressions, assignments, and operations
+-  **Undeclared Variable Detection**
+-  **Function Declaration & Call Validation**
+-  **Error Handling** with informative messages
+-  **AST Evaluation & Visualization Support**
 
 
 ---
@@ -36,12 +36,6 @@ Install the following dependencies:
 - [GCC](https://gcc.gnu.org/)
 - Make
 - Git (optional, for version control)
-
----
-
-## 📸 Sample Compilation Snapshot
-
-![Compilation Snapshot](C_compiler%20snap.jpeg)
 
 ---
 
