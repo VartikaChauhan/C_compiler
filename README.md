@@ -1,4 +1,4 @@
-# 🚀 Simple C Compiler Using Flex, Bison, and C
+#  Simple C Compiler Using Flex, Bison, and C
 
 ## 📝 Overview
 
@@ -12,7 +12,7 @@ It is designed to parse a subset of the C language and includes a full pipeline 
 
 ---
 
-## 🔧 Features
+##  Features
 
 -  **Lexical Analysis** using Flex
 -  **Syntax Parsing** with Bison (LALR parser)
@@ -27,7 +27,7 @@ It is designed to parse a subset of the C language and includes a full pipeline 
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 Install the following dependencies:
 
@@ -56,7 +56,9 @@ make
 ```
 This will parse test.c and perform lexical, syntax, and semantic analysis.
 
-## 📁 .gitignore — Ignored Files
+---
+
+###  .gitignore — Ignored Files
 
 This project uses a .gitignore file to exclude automatically generated files from version control, ensuring a clean and portable codebase.
 Ignored Binary and Generated Files:
